@@ -11,6 +11,7 @@ export default function AuthForm() {
   const router = useRouter();
 
   const handleGoogle = async () => {
+    if (typeof window === "undefined") return; // Prevent SSR
     try {
       await signInWithPopup(auth, provider);
       router.push("/");
