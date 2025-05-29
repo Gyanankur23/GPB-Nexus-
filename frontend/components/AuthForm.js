@@ -16,7 +16,7 @@ export default function AuthForm() {
       await signInWithPopup(auth, provider);
       router.push("/");
     } catch (e) {
-      setError(e.message);
+      setError(e?.message || String(e));
     }
   };
 
@@ -31,7 +31,7 @@ export default function AuthForm() {
       }
       router.push("/");
     } catch (e) {
-      setError(e.message);
+      setError(e?.message || String(e));
     }
   };
 
@@ -64,6 +64,7 @@ export default function AuthForm() {
         </button>
       </form>
       <button
+        type="button"
         onClick={handleGoogle}
         className="w-full flex items-center justify-center gap-2 border border-accent py-2 rounded hover:bg-accent hover:text-white transition"
       >
@@ -73,6 +74,7 @@ export default function AuthForm() {
       <p className="text-sm text-center">
         {isRegister ? "Already have an account?" : "No account?"}{" "}
         <button
+          type="button"
           onClick={() => setIsRegister(r => !r)}
           className="text-accent underline"
         >
