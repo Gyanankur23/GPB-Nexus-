@@ -67,7 +67,7 @@ export default function AuthForm() {
         type="button"
         onClick={handleGoogle}
         className="w-full flex items-center justify-center gap-2 border border-accent py-2 rounded hover:bg-accent hover:text-white transition"
-      >
+    >
         <img src="/images/logo.png" alt="Google" className="w-5 h-5" />
         Sign in with Google
       </button>
