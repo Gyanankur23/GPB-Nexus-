@@ -17,6 +17,7 @@ const firebaseConfig = {
 // Initialize Firebase only once (for Next.js hot reload compatibility)
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApps()[0];
 
+
 // Auth, Google Provider, Firestore
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
