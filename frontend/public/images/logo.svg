@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="16" fill="url(#peach)" />
+  <circle cx="32" cy="32" r="20" stroke="#007BFF" stroke-width="4" fill="white"/>
+  <path d="M22 32c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10S22 37.523 22 32Z" fill="#007BFF" opacity="0.22"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="bold" fill="#007BFF">GPB</text>
+  <text x="32" y="52" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="bold" fill="#007BFF">Nexus</text>
+  <defs>
+    <linearGradient id="peach" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFDAB9"/>
+      <stop offset="1" stop-color="#FFF5C3"/>
+    </linearGradient>
+  </defs>
+</svg>
